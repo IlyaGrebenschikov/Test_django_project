@@ -13,6 +13,13 @@ def index(request):
 
 def about(request):
     data = {
-        'title': 'Про нас'
+        'title': 'Про нас',
     }
     return render(request, 'main/about.html', data)
+
+
+def contacts(request):
+   data = {
+       'title': 'Связь с нами',
+   }
+   return render(request, 'main/contacts.html', data)
